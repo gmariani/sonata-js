@@ -1,0 +1,368 @@
+/* CSS Document */
+
+/* @group reset */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	border: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image:url(../img/galactica_1600x1200.jpg);
+	overflow-y: scroll;
+	font: 13px/20px "Helvetica Neue", Arial, sans-serif;
+	color: #283542;
+	text-shadow: 0 1px 0 #fff;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: #963;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+	color: #630;
+}
+a:active {
+	position: relative;
+	top: 1px;
+	color: #300;
+}
+
+header,
+nav,
+section,
+footer {
+	display: block;
+}
+
+section {
+	/*background: #EDEDED;
+	-webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+	border: 1px solid #fff;
+	padding: 49px;*/
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 50;
+}
+
+footer {
+	width: 500px;
+	margin: 25px auto;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.15);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+	color: rgba(0, 0, 0, 0.15);
+	font-weight: normal;
+	text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+	color: rgba(0, 0, 0, 1);
+}
+
+footer a:active {
+	color: rgba(0, 0, 0, 0.75);
+}
+
+audio {
+	display:block;
+}
+
+section#show {
+	margin-top:40px;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color:rgba(0,0,0, 0.5);/**/
+	
+	/* horizontal offset, vertical offset, blur radius, color */
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow:	3px 3px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 		3px 3px 5px rgba(0, 0, 0, 0.25);
+	
+	display:block;
+	height:500px;
+}
+
+canvas {
+	top:0px;
+	left:0px;
+	position:absolute;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+canvas#timer {
+	z-index:20;
+}
+
+canvas#particles {
+	z-index:10;
+	opacity:0.5;
+}
+
+canvas#circles {
+	z-index:15;
+	/*opacity:0.5;*/
+}
+
+/* hbox and vbox classes */
+.hbox {
+	text-align:center;
+}
+ 
+.vbox {
+	display: table;
+}
+ 
+.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h2 {
+	color:#fff;
+	font-size: 45px;
+	margin: 20px 0 25px 0;
+	font-weight: bold;
+}
+
+#about {
+	margin-top:40px;
+	padding: 25px;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color:rgba(0,0,0, 0.5);
+	
+	/* horizontal offset, vertical offset, blur radius, color */
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow:	3px 3px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 		3px 3px 5px rgba(0, 0, 0, 0.25);
+	
+	display:block;
+	height:500px;
+}
+
+#about p {
+	color: #fff;
+	font-size: 20px;
+	text-shadow: 0 1px 0 #000;
+}
+
+/* @group pin site */
+
+#divPinSite {
+    position: fixed;
+    padding: 5px;
+    color: white;
+    width: 380px;
+    height: 20px;
+    top: 0px;
+    left: 70px;
+    background-color: #c00;
+    border-radius: 0px 0px 10px 10px;
+    font-size: .87em;
+    font-family:Arial, Helvetica, sans-serif;
+    display:none;
+}
+
+#divPinSite img {
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+    float: left;
+    margin-right: 5px;
+}
+
+#divPinSite a {
+    float: left;
+    padding-top: 1em;
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+}
+
+/* @group player */
+
+.player {
+	display: block;
+	height: 48px;
+	width: 500px;
+	
+	-moz-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	
+	-moz-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	
+	-webkit-box-shadow: 0 -1px 0 rgba(30, 30, 30, .75);
+	-moz-box-shadow: 0 -1px 0 rgba(30, 30, 30, .75);
+	-o-box-shadow: 0 -1px 0 rgba(30, 30, 30, .75);
+	box-shadow: 0 -1px 0 rgba(30, 30, 30, .75);
+	
+	border-top: 1px solid #CBCBCB;
+	border-bottom: 1px solid #343434;
+	
+	background: #939eaa; /* #C0C0C0 #8A8A8A #B4B4B4 #A6A6A6 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(192, 192, 192, .9)), to(rgba(138, 138, 138, .9)), color-stop(.5, rgba(180, 180, 180, .9)),color-stop(.501, rgba(166, 166, 166, .9)));
+	background: -moz-linear-gradient(top, rgba(192, 192, 192, .9), rgba(180, 180, 180, .9) 50%, rgba(166, 166, 166, .9) 50.1%, rgba(138, 138, 138, .9));
+	background: linear-gradient(top, rgba(192, 192, 192, .9), rgba(180, 180, 180, .9) 50%, rgba(166, 166, 166, .9) 50.1%, rgba(138, 138, 138, .9));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#C0C0C0', endColorstr='#8A8A8A');/*For IE7-8-9*/ 
+	cursor: default;
+}
+
+#playtoggle {
+	position: absolute;
+	top: 9px;
+	left: 260px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/player.png) no-repeat -30px 0;
+	cursor: pointer;
+}
+
+#playtoggle.playing {
+	background-position: 0 0;
+}
+
+#playtoggle:active {
+	top: 10px;
+}
+
+.track {
+	position: absolute;
+	top: 19px;
+	left: 305px;
+	right: 50px;
+	height: 6px;
+	width: 300px;
+	padding: 2px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	
+	background: #BDC5B1;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2F2F2F), to(#5F5F5F));
+	background: -moz-linear-gradient(top, #2F2F2F, #5F5F5F);
+	background: linear-gradient(top, #2F2F2F, #5F5F5F);
+	
+	-webkit-box-shadow: 0 1px 4px rgba(30, 30, 30, .75) inset, 0 1px 0 rgba(187, 187, 187, .5);
+	-moz-box-shadow: 0 1px 4px rgba(30, 30, 30, .75) inset, 0 1px 0 rgba(187, 187, 187, .5);
+	-o-box-shadow: 0 1px 4px rgba(30, 30, 30, .75) inset, 0 1px 0 rgba(187, 187, 187, .5);
+	box-shadow: 0 1px 4px rgba(30, 30, 30, .75) inset, 0 1px 0 rgba(187, 187, 187, .5);
+}
+
+.volume {
+	width:100px;
+	left: 630px;	
+}
+
+.bar {
+	background: #fff;
+	background: #939eaa;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EDEDED), to(#CFCFCF));
+	background: -moz-linear-gradient(top, #EDEDED, #CFCFCF);
+	background: linear-gradient(top, #EDEDED, #CFCFCF);
+	
+	-webkit-box-shadow: 0 1px 0 #fff inset, 0 1px 0 #141e28;
+	-moz-box-shadow: 0 1px 0 #fff inset, 0 1px 0 #141e28;
+	-o-box-shadow: 0 1px 0 #fff inset, 0 1px 0 #141e28;
+	box-shadow: 0 1px 0 #fff inset, 0 1px 0 #141e28;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	
+	display: block;
+	float: left;
+	min-width: 6px;
+	height: 6px;
+}
+
+.thumb {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	background: url(../img/player.png) no-repeat -65px -5px;
+	cursor: pointer;
+}
+
+.player a.popup {
+	top: 9px;
+	right: 8px;
+	width: 32px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../img/player.png) no-repeat -90px 0;
+}
+
+.player a.popup:active {
+	background-position: -90px 1px;
+}
+
+/* Fonts */
+@font-face {
+	font-family: BlackJack;
+	src: url("fonts/black_jack.ttf");
+}
+
+@font-face {
+	font-family: Bonveno;
+	src: url("fonts/BonvenoCF-Light.otf");
+}
+
+@font-face {
+	font-family: CartoGothic;
+	src: url("fonts/CartoGothicStd-Bold.otf");
+}
+
+@font-face {
+	font-family: ChunkFive;
+	src: url("fonts/Chunkfive.otf");
+}
+
+@font-face {
+	font-family: CicleFina;
+	src: url("fonts/Cicle_Gordita.ttf");
+}
+
+@font-face {
+	font-family: Dubtronic;
+	src: url("fonts/Dubtronic-Inline.otf");
+}
+
+@font-face {
+	font-family: NuvoWeb;
+	src: url("fonts/NuvoWeb-Medi.woff");
+}
