@@ -1,5 +1,6 @@
 # SonataJS
 A music player built for the 2011 Beauty of the Web contest.
+[View Entry](https://mariani.life/projects/sonata/)
 
 # Legal
 ## Ra Ra Riot legal
